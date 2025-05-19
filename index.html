@@ -1,109 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Truefell — Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truefell — Roam With Purpose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      color: #ffffff;
-      background: url('hero-image.jpg') no-repeat center center/cover;
-      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: url('background.jpg') no-repeat center center/cover;
+      color: #2c2c2c;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      position: relative;
+      padding: 0rem;
     }
 
     .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 700px;
       width: 100%;
-      height: 100%;
-      background-color: rgba(46, 61, 47, 0.7);
-      z-index: 1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      max-width: 90%;
     }
 
     .logo {
-      width: 150px;
-      height: auto;
-      margin-bottom: 20px;
+      max-width: 250px;
+      margin-bottom: -1rem;
     }
 
     h1 {
-      font-size: 3rem;
-      margin: 0;
-      letter-spacing: 2px;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.2rem;
+      margin: 0.5rem 0;
     }
 
     p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      color: #D1C5AA;
-    }
-
-    .tagline {
-      margin-top: 2rem;
-      font-style: italic;
-      color: #F5EEDC;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-    }
-
-    form {
-      margin-top: 2rem;
-    }
-
-    input[type="email"] {
-      padding: 10px;
       font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      width: 250px;
+      line-height: 1.6;
+      margin: 1rem 0;
     }
 
-    input[type="submit"] {
-      padding: 10px 20px;
+    .slogan {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      margin-top: 0;
+      color: #555;
+    }
+
+    form input[type="email"] {
+      padding: 0.75rem;
       font-size: 1rem;
-      margin-left: 10px;
-      background-color: #A65E30;
+      width: 70%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      padding: 0.75rem 1.2rem;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      background-color: #3e4a2f;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
       cursor: pointer;
     }
 
-    .coming-soon {
-      margin-top: 2rem;
-      font-size: 1rem;
+    form button:hover {
+      background-color: #2f391f;
     }
   </style>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="content">
-    <img src="truefell-logo.png" alt="Truefell Logo" class="logo" />
-    <h1>TRUEFELL</h1>
-    <p>Outdoor clothing designed for quiet strength and purposeful living.<br>
-Born from the fells. Built for the path ahead.</p>
-    <div class="tagline">Move with purpose.</div>
-    <p class="coming-soon">We're launching soon — stay up to date below.</p>
-
-    <!-- Formspark Email Form -->
-    <form action="https://submit-form.com/nhTEjJBrd" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <input type="submit" value="Notify Me" />
+  <div class="overlay">
+    <img src="truefell-logo.png" alt="Truefell Logo" class="logo">
+    <h1>For the Quiet Explorers,<br>the Steady Pathfinders,<br>and the Roamers With Purpose.</h1>
+<div>
+  <div>
+    <p>Truefell is clothing for those who find meaning in the journey—whether it’s the hills, the coast, or the quiet routes of everyday life. Sustainably made, timelessly styled, and designed to move with you.</p>
+    <div>
+      <div>
+    <form action="https://submit.formspark.io/nhTEjJBrd" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Stay Updated</button>
     </form>
   </div>
 </body>
